@@ -31,7 +31,6 @@ function CreateBook() {
 
 		axios.post('http://localhost:5000/add', formData)
 			.then(res => {
-				console.log(res);
 				Navigate('/dashboard')
 			})
 			.catch(err => {

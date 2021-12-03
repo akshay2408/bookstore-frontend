@@ -24,7 +24,6 @@ export default function Edit() {
 	const [newUser, setNewUser] = useState();
 	useEffect(() => {
 		axios.get(`http://localhost:5000/edit/${id.id}`).then((res) => {
-			console.log(res, "./././")
 			setNewUser(res.data)
 		}).catch((err) => console.log(err))
 	}, [])
